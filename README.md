@@ -3,8 +3,8 @@
 Modify config.env as needed.
 
 ```bash
-INPUT_PATH=$PWD/input/
-OUTPUT_PATH=$PWD/output/
+INPUT_PATH=input/
+OUTPUT_PATH=output/
 ```
 
 ## Docker Build
