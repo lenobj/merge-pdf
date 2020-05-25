@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+   merge-pdf:
+      container_name: merge
+      image: lenobj/merge-pdf
+      environment:
+         - INPUT_PATH=${INPUT_PATH}
+         - OUTPUT_PATH=${OUTPUT_PATH}
+      volumes:
+         - './${INPUT_PATH}:/app/input'
+         - './${OUTPUT_PATH}:/app/output'
+      network_mode: "none"
